@@ -19,7 +19,7 @@ export const fadeIn = (position: string)=>{
             x: 0,
             opacity: 1,
             transition: {
-                type: "twenn",
+                type: "tween",
                 duration: 1.4,
                 delay: 0.5,
                 ease: [0.25, 0.25, 0.25, 0.75]
@@ -30,7 +30,7 @@ export const fadeIn = (position: string)=>{
             x: position === 'right' ? 80: 0,
             opacity: 0,
             transition: {
-                type: "twenn",
+                type: "tween",
                 duration: 1.4,
                 delay: 0.5,
                 ease: [0.25, 0.25, 0.25, 0.75]
