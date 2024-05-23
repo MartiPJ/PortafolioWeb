@@ -1,6 +1,7 @@
 import Avatar from "@/components/avatar";
 import ContainerPage from "@/components/container";
 import CounterServices from "@/components/counterservices";
+import LineTime from "@/components/timeline";
 import TransitionPage from "@/components/transitionPage";
 
 const PageAboutMe = () => {
@@ -14,6 +15,7 @@ const PageAboutMe = () => {
                     <span className="font-bold text-secondary">trayectoria profesional</span>
                 </h1>
                 <CounterServices />
+                <LineTime />
             </ContainerPage>
         </>
      );
