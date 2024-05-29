@@ -147,7 +147,7 @@ export const dataPortfolio = [
     {
         id: 1,
         title: "Web Pro",
-        image: "/image-1.jpg",
+        image: "/home-4.png",
         urlGithub: "#!",
         urlDemo: "#!",
     },

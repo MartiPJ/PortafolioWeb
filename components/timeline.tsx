@@ -26,7 +26,7 @@ const LineTime = () => {
                                             <p className="text-xl font-bold text-gray-400">{data.subtitle}</p>
                                             
                             </div>
-                            <p className="text-slate-400">{data.description}</p>
+                            <p className="text-slate-400 max-w-xl">{data.description}</p>
                             
                         </div>
                     ))}
