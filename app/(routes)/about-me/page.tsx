@@ -11,11 +11,12 @@ const PageAboutMe = () => {
             <ContainerPage>
                 <Avatar />
                 <h1 className="text-2xl leading-tight text-center md:text-left 
-                md:text-5xl md:mt-16">Toda mi{' '}
-                    <span className="font-bold text-secondary">trayectoria profesional</span>
+                md:text-5xl md:mt-16">Sobre{' '}
+                    <span className="font-bold text-secondary">Mi</span>
                 </h1>
-                <CounterServices />
+                
                 <LineTime />
+                <CounterServices />
             </ContainerPage>
         </>
      );

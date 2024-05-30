@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Avatar = () => {
     return ( 
-        <MotionTransition position="bottom" className="bottom-0 right-0 hidden md:inline-block md:absolute">
-            <Image src="/home-4.png" width={5} height={5}
+        <MotionTransition position="bottom" className="right-0 hidden md:inline-block md:absolute">
+            <Image src="/habilidades.png" width={370} height={370}
                 className="w-full h-full" alt ="Avatar" />
         </MotionTransition>
      );

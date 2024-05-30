@@ -1,21 +1,22 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech, Facebook, Instagram, MessageCircle } from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech, Facebook, Instagram, MessageCircle, FolderClosed, NotebookPen, HandHelping, Github, AppWindow, Gamepad2 } from "lucide-react";
 
 export const socialNetworks = [
     {
         id: 1,
         logo: <Facebook size={30} strokeWidth={1} />,
-        src: "#!",
-    },
-    {
-        id: 2,
-        logo: <Instagram size={30} strokeWidth={1} />,
-        src: "#!",
+        src: "https://github.com/MartiPJ",
+        
     },
     {
         id: 3,
         logo: <MessageCircle size={30} strokeWidth={1} />,
         src: "#!",
     },
+    {
+        id:4,
+        logo:<Github size={30} strokeWidth={1} />,
+        src:"#!",
+    }
     
 ];
 
@@ -35,14 +36,14 @@ export const itemsNavbar = [
     },
     {
         id: 3,
-        title: "Book",
-        icon: <BookText size={25} color="#fff" strokeWidth={1} />,
+        title: "Hand",
+        icon: <HandHelping size={25} color="#fff" strokeWidth={1} />,
         link: "/services",
     },
     {
         id: 4,
         title: "Target",
-        icon: <CodeSquare size={25} color="#fff" strokeWidth={1} />,
+        icon: <FolderClosed size={25} color="#fff" strokeWidth={1} />,
         link: "/portfolio",
     },
     {
@@ -56,60 +57,66 @@ export const itemsNavbar = [
 export const dataAboutPage = [
     {
         id: 1,
-        title: "Frontend Developer",
-        subtitle: "TechSolutions",
-        description: "Colabora con un equipo dinámico para desarrollar interfaces de usuario atractivas y funcionales que impulsen el éxito de nuestros clientes en el mundo digital.",
-        date: "Nov 2023 ",
+        title: "C++",
+        subtitle: "Proyectos",
+        description: "He colaborado con equipos en la eloboración de proyectos hechos en c++.",
+        
     },
     {
         id: 2,
-        title: "Creador de Experiencias Digitales",
-        subtitle: "PixelCrafters",
-        description: "Trabaja en proyectos emocionantes que desafían los límites de la creatividad y la tecnología. Únete a nosotros mientras creamos experiencias digitales cautivadoras que inspiran y cautivan a nuestros usuarios.",
-        date: "May 2021",
+        title: "Python",
+        subtitle: "Juegos",
+        description: "He desarollado juegon simples, como serpietes y escaleras,",
+        
     },
     {
         id: 3,
-        title: "Especialista en Desarrollo Frontend",
-        subtitle: "CodeForge Solutions",
-        description: "Como desarrollador frontend, tendrás la oportunidad de colaborar en proyectos diversos y desafiantes que te permitirán expandir tus habilidades y dejar tu huella en el mundo digital.",
-        date: "Ago 2019",
+        title: "Java",
+        subtitle: "Aplicaciones",
+        description: "He desarollado varias apliaciones en Java, desde un CRUD, hasta apliciones de estructura de datos como la implemetancion de árboles.",
+        
     },
     {
         id: 4,
-        title: "Prácticas Grado",
-        subtitle: "WebWizards Inc.",
-        description: "Únete a nosotros mientras creamos sitios web y aplicaciones interactivas que sorprenden y deleitan a nuestros clientes. Si tienes pasión por el diseño y la programación, y disfrutas colaborar en un entorno creativo, ¡queremos conocerte!        ",
-        date: "Mar 2018",
+        title: "Minecraft",
+        subtitle: "Servidores",
+        description: "Me gusta mucho gestionar servidores de minecraft para la versión de java, me encargo de gestionar cada servidor de manera que el usuario pueda estar satisfecho.",
+        
     },
+    {
+        id: 5,
+        title: "Actividades extracurriculares",
+        subtitle: "Música",
+        description: "Aparte de dedicarme a la informatica y sistemas, también me gusta desarrollar mi inteligencia músical a travéz del violín, el cual me apasiona mucho ejecutarlo",
+    }
 ]
 
 export const dataCounter = [
     {
         id: 0,
-        endCounter: 10,
-        text: "Años de experiencia",
+        endCounter: 80,
+        text: "Habilidades comunicativas",
         lineRight: true,
         lineRightMobile: true,
     },
     {
         id: 1,
-        endCounter: 80,
-        text: "Clientes satisfechos",
+        endCounter: 90,
+        text: "Toma de decisiones",
         lineRight: true,
         lineRightMobile: false,
     },
     {
         id: 2,
-        endCounter: 220,
-        text: "Proyectos finalizados",
+        endCounter: 100,
+        text: "Motivacón",
         lineRight: true,
         lineRightMobile: true,
     },
     {
         id: 3,
-        endCounter: 30,
-        text: "Premios ganadores",
+        endCounter: 85,
+        text: "Resolución de problemas",
         lineRight: false,
         lineRightMobile: false,
     },
@@ -117,30 +124,21 @@ export const dataCounter = [
 
 export const serviceData = [
     {
-        icon: <Crop />,
-        title: "Branding",
-        description: "Desarrollo de una identidad de marca sólida y coherente, incluyendo diseño de logotipo, colores y elementos visuales",
+        icon: <Computer />,
+        title: "Aplicaciones de escritorio",
+        description: "Desarrollo de aplicaciones para optimizar los diferentes procesos ya sea tareas personales o del trabajo.",
     },
     {
-        icon: <Pencil />,
+        icon: <AppWindow />,
         title: "Diseño web",
         description: "Diseño creativo y profesional de interfaces web intuitivas y atractivas, centradas en la experiencia del usuario",
     },
     {
-        icon: <Computer />,
-        title: "Desarrollo web",
-        description: "Diseño y desarrollo de sitios web a medida, adaptados a tus necesidades",
-    },
-    {
-        icon: <Book />,
-        title: "Copywriting",
-        description: "Creación de contenido persuasivo y atractivo que capta la atención de tu audiencia",
-    },
-    {
-        icon: <Rocket />,
-        title: "SEO",
-        description: "Optimización de tu presencia en línea mediante estrategias de SEO avanzadas, ",
-    },
+        icon: <Gamepad2 />,
+        title: "Servidores de Minecraft",
+        description: "Diseño y prgramación de servidores,mod,plugins para tu mundo de minecraft",
+    }
+
 ];
 
 export const dataPortfolio = [

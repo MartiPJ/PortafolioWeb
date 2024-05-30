@@ -22,7 +22,7 @@ const Navbar = () =>{
                         
 
                         </div>
-                    ))};
+                    ))}
                 </div>
             </nav>
         </MotionTransition>

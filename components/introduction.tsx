@@ -4,27 +4,27 @@ import Link from 'next/link';
 import { TypeAnimation } from 'react-type-animation';
 const Introduction=()=>{
     return(
-        <div className='z-20 w-full bg-darkBg/60'>
-            <div className='z-20 grid items-center h-full p-6 py-20 md:py-0 md:grid-cols-2'>
-                <Image src="/home-4.png" priority width="300" height="300" alt="Profile pic" />
+        <div className='z-20 w-full bg-darkBg/30'>
+            <div className='z-auto grid items-center h-full p-14 py-20 md:py-0 md:grid-cols-2'>
+                <Image src="/Perfil.jpg" priority width="250" height="250" alt="Profile pic" className="rounded-full" />
 
                 <div className="flex flex-col justify-center max-w-md">
-                    <h1 className="mb-5 text-2xl leading-tight text-center md:text-left
+                    <h1 className="mb-5 text-2xl leading-tight text-right md:text-left
                     md:text-4xl md:mb-10">
-                        Si puedes pensarlo,<br />
+                        Hola soy,<br />
                         <TypeAnimation
                         sequence={[
-                            "puedes programarlo",
+                            "Marti",
                             1000,
-                            "puedes optimizarlo",
+                            "buen líder",
                             1000,
-                            "puedes implementarlo",
+                            "desarollador backend",
                             1000,
-                            "puedes desarrollarlo",
+                            "administrador de BD",
                             1000
                         ]}
                         wrapper='span'
-                        speed={50}
+                        speed={60}
                         repeat={Infinity}
                         className="font-bold text-secondary"
                         />
@@ -33,11 +33,11 @@ const Introduction=()=>{
                         Soy un programador con el objetivo de poder ayudarte a optimizar tu tiempo
                     </p>
                     <div className='flex item-center justify-center gap-3 md:justify-start md:gap-10'>
-                        <Link href="/projects" className='px-3 py2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50'>
+                        <Link href="/portfolio" className='px-3 py2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50'>
                             Ver proyectos
                         </Link>
-                        <Link href="/contactame" className='px-3 py2 transition-all border-2 cursor-pointer text-secondary border-secondary text-md w-fit rounded-xl hover:shadow-xl hover:shadow-secondary'>
-                            contáctame
+                        <Link href="/about-me" className='px-3 py2 transition-all border-2 cursor-pointer text-secondary border-secondary text-md w-fit rounded-xl hover:shadow-xl hover:shadow-secondary'>
+                            Sobre mi
                         </Link> 
                     </div>
                 </div>
