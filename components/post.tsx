@@ -1,24 +1,34 @@
 import { parsedEnv } from "@/env";
 import axios from "axios";
 
-interface Post {
-  
-  id: number;
-  attributes: {
-    Title: string;
-    Body: string;
-
-  };
+interface PostAttributes {
+  title: string;
+  body: string;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
 }
 
-export default async function Post() {
-  const response = await axios.get<{ data: Post[] }>(parsedEnv.NEXT_PUBLIC_API_URL, {
-    headers: {
-      Authorization: `Bearer ${parsedEnv.NEXT_PUBLIC_API_KEY}`,
-    },
-  });
+interface Post{
+  id: string;
+  attributes: PostAttributes;
+}
 
-  console.log(response.data);
+interface ApiResponse {
+  data: Post[];
+}
+
+export default  async function Post() {
+  const config = {
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${parsedEnv.NEXT_PUBLIC_API_KEY}`,
+    }
+  };
+    // Realiza la petición con los headers configurados
+const response = await axios.get<ApiResponse>(`${parsedEnv.NEXT_PUBLIC_API_URL}`, config);
+console.log(response.data);
+
 
   return (
     <main className="p-4">
@@ -28,11 +38,11 @@ export default async function Post() {
           
           <article
             key={post.id}
-            className="p-4 border border-lime-300 rounded-xl"
+            className="p-4 border border-lime-300 rounded-xl h-40 overflow-auto"
           >
-            <h2 className="text-xl text-lime-500 font-semibold mb-2">{post.attributes?.Title}</h2>
-            <p className="text-amber-100 text-justify">{post.attributes?.Body}</p>
-            console.log(response.data.data)
+            <h2 className="text-xl text-lime-500 font-semibold mb-2">{post.attributes?.title}</h2>
+            <p className="text-amber-100 text-justify">{post.attributes?.body}</p>
+            
           </article>
         ))}
       </div>
