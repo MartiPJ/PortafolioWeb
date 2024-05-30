@@ -2,12 +2,12 @@ import { parsedEnv } from "@/env";
 import axios from "axios";
 
 interface Post {
-  data: {
-    id: number;
-    attributes: {
-      Title: string;
-      Body: string;
-    };
+  
+  id: number;
+  attributes: {
+    Title: string;
+    Body: string;
+
   };
 }
 
@@ -25,18 +25,22 @@ export default async function Post() {
       <h1 className="text-2xl font-bold mb-4 mt-auto">Posts</h1>
       <div className="flex flex-col gap-4">
         {response.data.data.map((post) => (
+          
           <article
             key={post.id}
             className="p-4 border border-lime-300 rounded-xl"
           >
-            <h2 className="text-xl text-lime-500 font-semibold mb-2">{post.attributes.Title}</h2>
-            <p className="text-amber-100 text-justify">{post.attributes.Body}</p>
+            <h2 className="text-xl text-lime-500 font-semibold mb-2">{post.attributes?.Title}</h2>
+            <p className="text-amber-100 text-justify">{post.attributes?.Body}</p>
+            console.log(response.data.data)
           </article>
         ))}
       </div>
     </main>
   );
 }
+
+
 
 
 
