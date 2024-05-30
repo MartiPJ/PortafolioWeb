@@ -5,7 +5,7 @@ const Avatar = () => {
     return ( 
         <MotionTransition position="bottom" className="right-0 hidden md:inline-block md:absolute">
             <Image src="/habilidades.png" width={370} height={370}
-                className="w-full h-full" alt ="Avatar" />
+                className="w-full h-full" alt ="Avatar"  />
         </MotionTransition>
      );
 }
