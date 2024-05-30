@@ -2,21 +2,10 @@ import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twit
 
 export const socialNetworks = [
     {
-        id: 1,
-        logo: <Facebook size={30} strokeWidth={1} />,
-        src: "https://github.com/MartiPJ",
-        
-    },
-    {
-        id: 3,
-        logo: <MessageCircle size={30} strokeWidth={1} />,
-        src: "#!",
-    },
-    {
-        id:4,
+        id:1,
         logo:<Github size={30} strokeWidth={1} />,
-        src:"#!",
-    }
+        src:"https://github.com/MartiPJ",
+    },
     
 ];
 

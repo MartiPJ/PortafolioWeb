@@ -29,8 +29,10 @@ const Introduction=()=>{
                         className="font-bold text-secondary"
                         />
                     </h1>
-                    <p className='mx-auto mb-2 text-xl md:mx-0 md:mb-8'>
-                        Soy un programador con el objetivo de poder ayudarte a optimizar tu tiempo
+                    <p className='mx-auto mb-2 text-xl md:mx-0 md:mb-8 text-justify'>
+                        Soy un estudiante de Ingeniería en Informática y Sistemas, comprometido con el aprendizaje continuo y el desarrollo de soluciones innovadoras en el campo de la tecnología.
+
+                        Desde muy joven, he sentido una profunda fascinación por la informática y la manera en que puede transformar el mundo que nos rodea. Esta pasión me ha llevado a dedicar tiempo y esfuerzo a profundizar mis conocimientos en áreas como la programación, programación web y el desarrollo de software.
                     </p>
                     <div className='flex item-center justify-center gap-3 md:justify-start md:gap-10'>
                         <Link href="/portfolio" className='px-3 py2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50'>
