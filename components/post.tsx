@@ -12,9 +12,9 @@ interface Post {
 }
 
 export default async function Post() {
-  const response = await axios.get<{ data: Post[] }>(parsedEnv.API_URL, {
+  const response = await axios.get<{ data: Post[] }>(parsedEnv.NEXT_PUBLIC_API_URL, {
     headers: {
-      Authorization: `Bearer ${parsedEnv.API_KEY}`,
+      Authorization: `Bearer ${parsedEnv.NEXT_PUBLIC_API_KEY}`,
     },
   });
 
